@@ -25,6 +25,7 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_firstNameLocal")).sendKeys("Mani");
 		driver.findElement(By.name("departmentName")).sendKeys("Title");
 		driver.findElement(By.id("createLeadForm_description")).sendKeys("US Title Insurance");
+		driver.findElement(By.id("createLeadForm_primaryPhoneNumber")).sendKeys("7708949409");
 		driver.findElement(By.id("createLeadForm_primaryEmail")).sendKeys("mmanikandanmadhayan@gmail.com");
 		WebElement parent = driver.findElement(By.name("generalStateProvinceGeoId"));
 		Select dd=new Select(parent);
@@ -33,7 +34,7 @@ public class CreateLead {
 		String title = driver.getTitle();
 		System.out.println(title);
 		driver.close();
-				
+		 
 	}
 
 }
